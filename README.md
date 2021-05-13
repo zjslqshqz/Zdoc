@@ -8,7 +8,7 @@ JSDoc + zjslqshqz = Zdoc
 
 [jsdoc][https://github.com/jsdoc/jsdoc]
 
-![](https://img.shields.io/badge/jsdoc->=3.5.5-blue.svg)
+![](https://img.shields.io/badge/jsdoc->=3.6.6-blue.svg)
 
 [jsdoc-babel][https://github.com/ctumolosus/jsdoc-babel]
 
