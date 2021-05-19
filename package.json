@@ -4,7 +4,7 @@
   "description": "jsdoc documentation",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/.bin/ng version",
+    "test ng": "node_modules/.bin/ng version",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
@@ -32,6 +32,7 @@
     "@angular/platform-browser": "~11.2.14",
     "@angular/platform-browser-dynamic": "~11.2.14",
     "@angular/router": "~11.2.14",
+    "@angular/service-worker": "~11.2.14",
     "highlight.js": "^10.7.2",
     "jsdoc": "^3.6.6",
     "jsdoc-babel": "^0.5.0",
