@@ -1,5 +1,6 @@
 # Zdoc
-JSDoc + zjslqshqz = Zdoc
+
+采用新版本的库，适用新版本的平台环境
 
 ![](https://img.shields.io/npm/l/express.svg)
 ![](https://img.shields.io/badge/node->=14.17.0-g.svg)
