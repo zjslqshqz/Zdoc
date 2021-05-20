@@ -47,3 +47,11 @@
 ![](https://img.shields.io/badge/ngZorroAntd->=11.4.1-blue.svg)
 
 [https://github.com/NG-ZORRO/ng-zorro-antd]: https://github.com/NG-ZORRO/ng-zorro-antd
+
+## 插件
+
+[ngx-perfect-scrollbar][https://github.com/zefoy/ngx-perfect-scrollbar]
+
+![](https://img.shields.io/badge/ngxPerfectScrollbar->=10.1.1-blue.svg)
+
+[https://github.com/zefoy/ngx-perfect-scrollbar]: https://github.com/zefoy/ngx-perfect-scrollbar
