@@ -22,9 +22,18 @@ const antDesignIcons = AllIcons as {
     [key: string]: IconDefinition;
 };
 const icons: IconDefinition[] = Object.keys(antDesignIcons).map(key => antDesignIcons[key])
+import { NzInputModule } from 'ng-zorro-antd/input';
+// 自定义滚动条
+import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
+import { PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';
+import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
+const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
+    suppressScrollX: true
+};
 // 导入页面组件
 import {AppComponent} from './app.component';
 import {LayoutMainComponent} from './layout-main/layout-main.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
     declarations: [
@@ -45,9 +54,17 @@ import {LayoutMainComponent} from './layout-main/layout-main.component';
         NzLayoutModule,
         NzMenuModule,
         NzIconModule.forRoot(icons),
-        NzBreadCrumbModule
+        NzBreadCrumbModule,
+        NzInputModule,
+        FormsModule,
+        PerfectScrollbarModule
     ],
-    providers: [],
+    providers: [
+        {
+            provide: PERFECT_SCROLLBAR_CONFIG,
+            useValue: DEFAULT_PERFECT_SCROLLBAR_CONFIG
+        }
+    ],
     bootstrap: [AppComponent]
 })
 export class AppModule {

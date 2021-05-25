@@ -7,7 +7,11 @@ import {Component, OnInit} from '@angular/core';
 })
 export class LayoutMainComponent implements OnInit{
   isCollapsed = false;
+  inputValue = '';
   ngOnInit():void {
-
+    console.log(1)
+  }
+  a(v:any){
+    console.log(v)
   }
 }

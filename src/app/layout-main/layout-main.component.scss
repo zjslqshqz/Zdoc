@@ -1,6 +1,3 @@
-.layout-main{
-  min-height: 100vh;
-}
 .trigger {
   font-size: 18px;
   line-height: 64px;
@@ -13,18 +10,45 @@
   color: #1890ff;
 }
 
-.logo {
-  height: 32px;
-  background: rgba(255, 255, 255, 0.2);
-  margin: 16px;
-}
+:host ::ng-deep{
 
-//nz-sider {
-//  overflow: auto;
-//  height: 100%;
-//  position: fixed;
-//  left: 0;
-//}
+  .layout-main{
+    min-height: 100%;
+  }
+
+  .ant-layout-sider-children{
+    display: flex;
+    flex-direction: column;
+  }
+
+  nz-sider{
+
+    .logo {
+      height: 32px;
+      background: rgba(255, 255, 255, 0.2);
+      margin: 16px;
+    }
+    .input{
+      height: 32px;
+      margin: 16px;
+    }
+
+    .fix_flex{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      flex: 1;
+
+      perfect-scrollbar{
+        position: absolute;
+      }
+    }
+
+
+  }
+
+
+}
 
 nz-header {
   background: #fff;
